@@ -1,6 +1,6 @@
 #include <cstdlib>
 #include "framework.h"
-logingame()
+void logingame()
 {
 	int id;
 

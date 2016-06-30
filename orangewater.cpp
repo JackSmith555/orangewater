@@ -6,12 +6,14 @@
 //#include "loginout.h"
 //#include "core.h"
 //#include "loader.h"
+#include "GL/gl.h"
+#include "framework.h"
 
 using namespace std;
 
 int menu()
 {
-	int choose=0;
+   int choose=0;
    cout<<"1.login game"<<endl;
    cout<<"2.configuration"<<endl;
    cout<<"3.personal result rankings"<<endl;
@@ -20,7 +22,7 @@ int menu()
    cout<<"6.exit game"<<endl;
    cout<<"please choose(1~5):"<<endl;
    cin>>choose;
-	while(choose!=5)
+   while(choose!=5)
 	{
 		switch(choose)
 		{
@@ -39,7 +41,7 @@ int menu()
 			case 5:
 				exitgame();
 				break;
-			case default:
+			default:
 				break;
 
 		}
